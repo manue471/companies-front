@@ -1,0 +1,25 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+// app global css in SCSS form
+$primary   : #1976D2;
+$secondary : #26A69A;
+$accent    : #9C27B0;
+
+$dark      : #1D1D1D;
+$dark-page : #121212;
+
+$positive  : #21BA45;
+$negative  : #C10015;
+$info      : #31CCEC;
+$warning   : #F2C037;
+
+$backgroundPrimary: #0E044A;
+$background: #F8F8F8;
+$backgroundLight: #DEE6F8;
+$labels: #2F4565;
+$secondary: #584BF9;
