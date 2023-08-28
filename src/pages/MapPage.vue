@@ -23,6 +23,7 @@
               <p><label for="">CNPJ:</label> {{ selectedCompany.cnpj }}</p>
               <p><label for="">Email:</label> {{ selectedCompany.email }}</p>
               <p><label for="">Telefone:</label> {{ selectedCompany.whatsapp_phone }}</p>
+              <p><label for="">Representante:</label> {{ selectedCompany.representantive_user }}</p>
             </div>
           </div>
         </div>
