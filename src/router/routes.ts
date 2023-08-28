@@ -7,9 +7,10 @@ const routes: RouteRecordRaw[] = [
     children: [{ path: 'map', component: () => import('pages/MapPage.vue') }],
   },
   {
-    path: '/login',
+    path: '/',
+    redirect: '/login',
     component: () => import('layouts/LoginLayout.vue'),
-    children: [{ path: '', component: () => import('pages/LoginPage.vue') }],
+    children: [{ path: '',  component: () => import('pages/LoginPage.vue') }],
   },
 
   // Always leave this as last one,

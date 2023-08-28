@@ -1,4 +1,4 @@
-import api from './api';
+import { api } from './api';
 import { Login, LoginResponse } from './types';
 
 export const login = async (body: Login) => {

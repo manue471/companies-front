@@ -14,3 +14,17 @@ export type LoginResponse = {
     email_verified_at: string | null;
   };
 }
+
+export type Company = {
+  name: string;
+  cnpj: string;
+  email: string;
+  representantive_user: string;
+  city_id: string;
+  state_id: string;
+  latitude: number;
+  longitude: number;
+  category_id: string;
+  whatsapp_phone: string;
+  notes?: string
+ }
