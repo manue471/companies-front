@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
 import { login } from 'src/service/login';
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import { useQuasar } from 'quasar'
 import { useRouter } from 'vue-router';
 
@@ -39,6 +39,10 @@ async function signIn(e: Event) {
     $router.push('/map');
   }
 }
+
+onMounted(() => {
+  sessionStorage.removeItem('token')
+})
 </script>
 
 <style lang="scss" scoped>

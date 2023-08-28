@@ -32,5 +32,11 @@ export default route(function (/* { store, ssrContext } */) {
     history: createHistory(process.env.VUE_ROUTER_BASE),
   });
 
+  Router.beforeEach((to, from, next) => {
+    const token = sessionStorage.getItem('token');
+    if (to.path !== '/' && !token) {
+      next('/');
+    } next();
+  });
   return Router;
 });
